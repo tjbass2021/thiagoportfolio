@@ -1,0 +1,82 @@
+:root {
+    --azul: #726eff;
+    --verde-green: #5affe7;
+    --verde: #08c6ab;
+    --azul-grey: #374658;
+    --azul-dark: #212838;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--azul-dark);
+}
+
+.container {
+    max-width: 940px;
+    min-width: 940px;
+}
+
+/*CABEÇALHO*/
+
+.cabecalho {
+    background-color: var(--azul-grey);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.cabecalho .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .container .menu a {
+    text-decoration: none;
+    color: var(--verde-green);
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.cabecalho .container .menu a:last-child{
+    border: 1px solid var(--verde-green);
+    border-radius: 30px;
+    padding: 5px 20px;
+    transition: .3s;
+}
+
+.cabecalho .container .menu a:not(a:last-child):hover{
+    color: var(--verde);
+    transition: .3s;
+}
+
+.cabecalho .container .menu a:last-child:hover{
+    background-color: var(--verde-green);
+    color: var(--azul-grey);
+    transition: .3s;
+}
+
+
+.logo {
+    
+    background-color: var(--azul-dark);
+    border-radius: 100%;
+    padding: 10px;
+    color: var(--verde-green);
+    margin-right: 15px;
+    
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+}

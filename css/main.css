@@ -147,26 +147,80 @@ body {
     font-size: 45px;
 }
 
-/* .apresentacao .background {
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    background: rgb(114,110,255);
-    background: linear-gradient(0deg, rgba(114,110,255,1) 0%, rgba(8,198,171,1) 100%);
-    -webkit-clip-path: polygon(100% 0, 100% 57%, 51% 81%, 0 59%, 0 0);
-    clip-path: polygon(100% 0, 100% 57%, 51% 81%, 0 59%, 0 0);
-    z-index: 2;
+/*SEÇÃO DE PROJETOS*/
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.apresentacao .background-circular {
+.projetos .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.projetos .container .projeto {
+    width: 400px;
+    height: 600px;
+    /* background-color: black; */
+    margin: 10px ;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.projetos .container .projeto .box-projeto {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #212838;
+    margin-bottom: 120px;
+
+}
+
+.projetos .container .projeto .box-projeto img {
+    width: 100%;
     position: absolute;
-    background: rgb(114,110,255);
-    background: linear-gradient(0deg, rgba(114,110,255,1) 0%, rgba(8,198,171,1) 100%);
-    width: 2500px;
-    height: 1700px;
-    border-radius: 100%;
-    top: -1250px;
-    z-index: 3;
-} */
+    z-index: 1;
+}
+
+.projetos .container .projeto .box-projeto .label{
+    background-color: var(--azul);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    bottom: -80px;
+    left: 80px;
+    width: 200px;
+    height: 200px;
+}
+
+.projetos .container .projeto .ver-projeto{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+    width: 150px;
+}
+
+.projetos .container .projeto .ver-projeto:hover{
+    color: var(--verde-green);
+    transition: 0.3s;
+}
+
+.projeto .box-projeto .titulo-projeto {
+    font-size: 25px;
+}
 
 

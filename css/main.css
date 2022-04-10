@@ -17,6 +17,7 @@ body {
     background-color: var(--azul-dark);
 }
 
+
 .container {
     max-width: 940px;
     min-width: 940px;
@@ -25,12 +26,16 @@ body {
 /*CABEÇALHO*/
 
 .cabecalho {
+    position: fixed;
+    top: 0;
     background-color: var(--azul-grey);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px 0;
+    z-index: 5;
+    width: 100%;
 }
 
 .cabecalho .container {
@@ -86,14 +91,60 @@ body {
 /*SEÇÃO APRESENTAÇÃO*/
 
 .apresentacao {
+    margin-top: 58px;
     display: flex;
     justify-content: center;
     position: relative;
-    height: 500px;
-    /* background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(114,110,255,1) 60%); */
-    overflow: hidden;
-    border-bottom: 1px solid white;
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%) 100%), url('../src/img/stars-1654074_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.apresentacao .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao .container .texto-apresentacao {
+    background-color: black;
+    width: 500px;
+    padding: 20px;
+
+
+}
+
+.apresentacao .container .texto-apresentacao p{
+    color: white;
+    font-size: 30px;
+}
+
+.apresentacao .container .texto-apresentacao p span{
+    font-weight: bold;
+    color: var(--verde-green);
+}
+
+.redes {
+    padding: 20px;
+}
+
+.redes nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.redes nav a:hover{
+    color: var(--verde-green);
+    transition: 0.3s;
+    font-size: 45px;
 }
 
 /* .apresentacao .background {
@@ -105,7 +156,7 @@ body {
     -webkit-clip-path: polygon(100% 0, 100% 57%, 51% 81%, 0 59%, 0 0);
     clip-path: polygon(100% 0, 100% 57%, 51% 81%, 0 59%, 0 0);
     z-index: 2;
-} */
+}
 
 .apresentacao .background-circular {
     position: absolute;
@@ -116,6 +167,6 @@ body {
     border-radius: 100%;
     top: -1250px;
     z-index: 3;
-}
+} */
 
 

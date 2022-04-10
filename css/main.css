@@ -223,4 +223,91 @@ body {
     font-size: 25px;
 }
 
+/*SEÇÃO SOBRE*/
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    background-color: var(--verde);
+}
+
+.sobre .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.sobre .container h2 {
+    padding: 10px;
+    padding-left: 100px;
+    font-size: 40px;
+}
+
+.sobre .container .box-sobre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.sobre .container .box-sobre .box-box img{
+    width: 350px;
+}
+
+.sobre .container .box-sobre .box-box {
+    width: 400px;
+    padding: 20px;
+}
+
+.sobre .container .box-sobre .box-box p {
+    font-size: 20px;
+}
+
+.sobre .container .box-sobre .box-box .redes nav a i{
+    color: black;
+}
+
+.sobre .container .box-sobre .box-box .redes nav a i:hover{
+    color: var(--azul-dark);
+    transition: 0.3s;
+
+}
+
+.sobre .container .box-sobre:last-child{
+    justify-content: flex-start;
+    padding-left: 100px;
+}
+
+.sobre .container .box-sobre{
+    border: 1px solid black;
+}
+.sobre .container .box-sobre .box-box h2{
+    padding: 10px;
+    font-size: 40px;
+}
+
+.sobre .container .box-sobre .box-box h3{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.sobre .container .box-sobre .box-box ul li{
+    font-size: 25px;
+}
+
+.sobre .container .box-sobre .box-box ul{
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.linha {
+    margin: 20px;
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    align-self: center;
+}
 

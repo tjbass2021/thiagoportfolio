@@ -186,13 +186,11 @@ a {
 .projetos .container .projeto {
     width: 400px;
     height: 600px;
-    /* background-color: black; */
     margin: 10px ;
     color: white;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -213,7 +211,8 @@ a {
 }
 
 .projetos .container .projeto .box-projeto .label{
-    background-color: var(--azul);
+    background-color: var(--verde);
+    color: black;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -293,7 +292,7 @@ a {
 }
 
 .sobre .container .box-sobre .box-box .redes nav a i:hover{
-    color: var(--azul-dark);
+    color: white;
     transition: 0.3s;
 
 }
@@ -387,3 +386,52 @@ a {
     height: 263px;
 }
 
+/*FOOTER*/
+
+#rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.box-footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    
+}
+
+.box-footer h2 {
+    color: white;
+}
+
+.box-footer .redes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-footer .redes a{
+    margin: 5px;
+
+}
+
+.desenvolvimento a{
+    color: white;
+}
+
+.desenvolvimento a:hover{
+    color: var(--verde-green);
+}
+
+.endereco {
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    color: white;
+    text-align: center;
+}

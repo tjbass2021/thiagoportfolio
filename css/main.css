@@ -17,10 +17,31 @@ body {
     background-color: var(--azul-dark);
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .container {
     max-width: 940px;
     min-width: 940px;
+}
+
+.box-sobre {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.box-box{
+    width: 350px;
+    height: 350px;
+}
+
+.box-box img {
+    width: 350px;
 }
 
 /*CABEÇALHO*/
@@ -259,6 +280,7 @@ body {
 
 .sobre .container .box-sobre .box-box {
     width: 400px;
+    height: auto;
     padding: 20px;
 }
 
@@ -309,5 +331,59 @@ body {
     height: 5px;
     background-color: black;
     align-self: center;
+}
+
+/*SEÇÃO DE CONTATO*/
+
+#contato{
+    display: flex;
+    justify-content: center;
+    background-color: var(--azul);
+}
+
+#contato .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    /* padding-bottom: 30px; */
+}
+
+#contato .container h2{
+    font-size: 40px;
+    padding: 10px 100px;
+}
+
+.orcamento {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px 20px;
+    transition: .3s;
+    font-size: 25px;
+}
+
+.orcamento:hover{
+    border: 2px solid var(--verde);
+    transition: 0.3s;
+    background-color: var(--verde);
+    color: black;
+}
+
+.texto {
+    margin-bottom: 20px;
+}
+
+.texto p{
+    font-size: 40px;
+    margin: 5px;
+    background-color: var(--verde);
+}
+
+.caixa-fazer-projeto{
+    padding: 20px;
+}
+
+.box-contato .box-box {
+    height: 263px;
 }
 

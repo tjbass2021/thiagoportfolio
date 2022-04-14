@@ -7,6 +7,8 @@
     <title>Thiago Souza</title>
     <!--Estilo principal-->
     <link rel="stylesheet" href="css/main.css">
+    <!--Responsividade-->
+    <link rel="stylesheet" href="css/responsive.css">
     <!--Fontes do site-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +17,10 @@
 </head>
 <body>
 
-    <header class="cabecalho">
+    <header id="topo" class="cabecalho">
         <div class="container">
             <div class="logotipo">
-                <div class="logo"><a href="https://tjbass2021.github.io/thiagoportfolio/"><h2>TS</h2></a></div>
+                <div class="logo"><a href="#apresentacao"><h2>TS</h2></a></div>
                 <!-- <h1>Thiago Souza</h1> -->
             </div>
             <nav class="menu">
@@ -27,11 +29,24 @@
                 <a href="#contato">Contato</a>
                 <a href="https://forms.gle/EUSFnz3WaXR5t57z8" target="_blank">Orçamento</a>
             </nav>
+
+            <div class="menu2">
+                <button class="menu-hamburguer"><i class="fa-solid fa-bars"></i></button>
+
+                <nav class="menu-oculto">
+                    <ul>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a class="orcament" href="#">Orçamento</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="apresentacao">
+        <section id="apresentacao" class="apresentacao">
             <div class="container">
                 <div class="texto-apresentacao">
                     <p>Eu me chamo <span>Thiago Souza</span>, sou desenvolvedor <span>front-end</span> e estou aqui para ajudar você a desenvolver o seu projeto!</p>
@@ -110,7 +125,7 @@
                 </div>
                 <div class="linha"></div>
                 <h2>HABILIDADES</h2>
-                <div class="box-sobre">
+                <div class="box-sobre habilidades">
                     
                     <div class="box-box">
                         
@@ -183,4 +198,7 @@
 </body>
 <!---Fonte de ícones-->
 <script src="https://kit.fontawesome.com/a9733b5846.js" crossorigin="anonymous"></script>
+<!--Scripts do menu e JQuery-->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/menu.js"></script>
 </html>

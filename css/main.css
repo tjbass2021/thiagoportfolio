@@ -91,6 +91,53 @@ a {
     transition: .3s;
 }
 
+.menu2{
+    display: none;
+    transition: 0.3s;
+}
+
+.menu-hamburguer {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 64px;
+    height: 64px;
+}
+
+.menu-hamburguer i{
+    color: var(--verde-green);
+    font-size: 30px;
+}
+
+.menu-oculto {
+    display: none;
+}
+
+
+.menu-oculto li {
+    list-style: none;
+    margin: 20px;
+}
+
+.menu-oculto li a {
+    text-decoration: none;
+    color: var(--verde-green);
+    padding: 5px 20px;
+}
+
+.orcament {
+    border: 1px solid var(--verde-green);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.orcament:hover {
+    background-color: var(--verde-green);
+    color:var(--azul-grey);
+    transition: 0.3s;
+}
+
 
 .logo h2 {
     

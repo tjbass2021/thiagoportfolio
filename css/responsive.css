@@ -1,0 +1,62 @@
+@media screen and (max-width: 939px){
+    .container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 5px 10px;
+    }
+
+    .cabecalho .container {
+        padding: 0 10px;
+    }
+
+    .cabecalho {
+        padding: 0;
+    }
+
+    header, main, footer {
+        overflow: hidden;
+    }
+
+    .menu2 {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 502px){
+    .texto-apresentacao{
+        width: 100% !important;
+    }
+
+    .texto-apresentacao p{
+        font-size: 20px !important;
+    }
+
+    .habilidades {
+        padding: 20px 20px 20px 70px !important;
+    }
+
+    .container h2{
+        padding: 10px !important;
+        text-align: center;
+    }
+
+    .box-sobre {
+        border: none !important;
+    }
+
+    .projetos .container {
+        padding: 0 !important;
+    }
+
+    .projeto {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+}

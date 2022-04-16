@@ -107,7 +107,7 @@ a {
 
 .menu-hamburguer i{
     color: var(--verde-green);
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .menu-oculto {
@@ -140,7 +140,7 @@ a {
 
 
 .logo h2 {
-    
+    font-size: 1.5rem;
     background-color: var(--azul-dark);
     border-radius: 5px;
     padding: 10px;
@@ -253,8 +253,8 @@ a {
 }
 
 .projetos .container .projeto .box-projeto img {
-    width: 100%;
-    height: 100%;
+    width: 25rem;
+    height: 25rem;
     position: absolute;
     z-index: 1;
 }
@@ -269,10 +269,11 @@ a {
     justify-content: center;
     position: absolute;
     z-index: 2;
-    bottom: -80px;
-    left: 80px;
-    width: 200px;
-    height: 200px;
+    bottom: -5rem;
+    left: 25%;
+    right: 25%;
+    width: 12.5rem;
+    height: 12.5rem;
 }
 
 .label .titulo-projeto {
@@ -327,7 +328,12 @@ a {
 }
 
 .sobre .container .box-sobre .box-box img{
-    width: 350px;
+    /* width: 350px; */
+    width: 21.875rem;
+    border-radius: 100%;
+    filter: saturate(150%) contrast(105%);
+    -webkit-filter: saturate(150%) contrast(105%);
+    -moz-filter: saturate(150%) contrast(105%);
 }
 
 .sobre .container .box-sobre .box-box {

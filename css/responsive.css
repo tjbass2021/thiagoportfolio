@@ -4,10 +4,12 @@
         max-width: 100%;
         min-width: 100%;
         padding: 5px 10px;
+        
     }
 
     .cabecalho .container {
         padding: 0 10px;
+        
     }
 
     .cabecalho {
@@ -59,4 +61,33 @@
         margin: 0 !important;
     }
     
+}
+
+@media screen and (max-width: 375px){
+    .projetos .container .projeto {
+        width: 100%;
+    }
+
+    .projetos .container .projeto .box-projeto img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .projetos .container .projeto .box-projeto .label{
+        width: 12.5rem;
+        height: 12.5rem;
+        bottom: -20%;
+    }
+
+    .descricao-projeto{
+        align-items: center;
+        width: center;
+        font-size: 0.8rem;
+    }
+
+    .box-sobre.habilidades {
+        padding-left: 0 !important;
+    }
+
+
 }

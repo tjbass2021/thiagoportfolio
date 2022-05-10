@@ -89,5 +89,7 @@
         padding-left: 0 !important;
     }
 
-
+    .sobre img {
+        width: 250px !important;
+    }
 }

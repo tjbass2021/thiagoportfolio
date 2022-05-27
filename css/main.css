@@ -1,4 +1,4 @@
-:root {
+root {
     --azul: #726eff;
     --verde-green: #5affe7;
     --verde: #08c6ab;
@@ -105,6 +105,9 @@ a {
     margin-left: 20px;
     width: 64px;
     height: 64px;
+    position: fixed;
+    right: 10px;
+    top: 0px;
 }
 
 .menu-hamburguer i{
@@ -148,7 +151,7 @@ a {
     padding: 10px;
     color: var(--verde-green);
     margin-right: 15px;
-    
+
 }
 
 .logotipo {
@@ -465,7 +468,7 @@ a {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 8px;
-    
+
 }
 
 .box-footer h2 {
@@ -507,12 +510,12 @@ a {
         max-width: 100%;
         min-width: 100%;
         padding: 5px 10px;
-        
+
     }
 
     .cabecalho .container {
         padding: 0 10px;
-        
+
     }
 
     .cabecalho {
@@ -563,7 +566,7 @@ a {
         padding: 0 !important;
         margin: 0 !important;
     }
-    
+
 }
 
 @media screen and (max-width: 375px){

@@ -97,7 +97,7 @@ a {
     display: none;
     transition: 0.3s;
 }
-
+/*O botão que bugou tudo*/
 .menu-hamburguer {
     border: none;
     background: none;
@@ -105,11 +105,12 @@ a {
     margin-left: 20px;
     width: 64px;
     height: 64px;
+/*a parte nova inserida*/
     position: fixed;
     right: 10px;
     top: 0px;
 }
-
+/*-----fim---------------*/
 .menu-hamburguer i{
     color: var(--verde-green);
     font-size: 1.875rem;

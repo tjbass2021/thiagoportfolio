@@ -1,4 +1,4 @@
-root {
+:root{
     --azul: #726eff;
     --verde-green: #5affe7;
     --verde: #08c6ab;
@@ -17,6 +17,7 @@ root {
 body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: var(--azul-dark);
+    position: relative;
 }
 
 a {
@@ -51,14 +52,16 @@ a {
 .cabecalho {
     position: fixed;
     top: 0;
-    background-color: var(--azul-grey);
+    background-color: var(--azul-grey);;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 5px 0;
     z-index: 5;
     width: 100%;
+    min-height: 64px;
 }
 
 .cabecalho .container {
@@ -109,16 +112,37 @@ a {
     position: fixed;
     right: 10px;
     top: 0px;
+    z-index: 7;
 }
 /*-----fim---------------*/
 .menu-hamburguer i{
     color: var(--verde-green);
     font-size: 1.875rem;
+    z-index: 6;
 }
 
 .menu-oculto {
-    display: none;
+    display: block;
+    width: 0vw;
+    height:100vh;
+    background-color: var(--azul-dark);
+    position: fixed;
+    right: 0;
+    top: 64px;
+    z-index: 6;
+
+
+
 }
+
+.visivel {
+    display: block;
+    right: 0;
+    transition: 0.3s;
+    width: 70vw;
+}
+
+
 
 
 .menu-oculto li {
@@ -523,11 +547,12 @@ a {
         padding: 0;
     }
 
-    header, main, footer {
+    main, footer {
         overflow: hidden;
     }
 
     .menu2 {
+        position: relative;
         display: block;
     }
 

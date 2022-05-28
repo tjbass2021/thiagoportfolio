@@ -1,4 +1,4 @@
-:root {
+:root{
     --azul: #726eff;
     --verde-green: #5affe7;
     --verde: #08c6ab;
@@ -17,6 +17,7 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: var(--azul-dark);
+    position: relative;
 }
 
 a {
@@ -51,14 +52,16 @@ a {
 .cabecalho {
     position: fixed;
     top: 0;
-    background-color: var(--azul-grey);
+    background-color: var(--azul-grey);;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 5px 0;
     z-index: 5;
     width: 100%;
+    min-height: 64px;
 }
 
 .cabecalho .container {
@@ -97,24 +100,58 @@ a {
     display: none;
     transition: 0.3s;
 }
-
-.menu-hamburguer {
+.menu-hamburguer, .exit {
     border: none;
     background: none;
     cursor: pointer;
     margin-left: 20px;
     width: 64px;
     height: 64px;
+    position: fixed;
+    right: 10px;
+    top: 0px;
+    z-index: 7;
 }
 
-.menu-hamburguer i{
+.menu-hamburguer-oculto {
+    display: none;
+}
+.menu-hamburguer i, .exit i{
     color: var(--verde-green);
     font-size: 1.875rem;
+    z-index: 6;
+}
+
+.exit{
+    display: none;
 }
 
 .menu-oculto {
-    display: none;
+    display: block;
+    width: 0vw;
+    height:100vh;
+    background-color: var(--azul-grey);
+    position: fixed;
+    right: 0;
+    top: 64px;
+    z-index: 6;
+    transition: 0.5s;
+
+
 }
+
+.exit-visivel {
+    display: block;
+}
+
+.visivel {
+    display: block;
+    right: 0;
+    width: 70vw;
+    transition: 0.5s
+}
+
+
 
 
 .menu-oculto li {
@@ -148,7 +185,7 @@ a {
     padding: 10px;
     color: var(--verde-green);
     margin-right: 15px;
-    
+
 }
 
 .logotipo {
@@ -465,7 +502,7 @@ a {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 8px;
-    
+
 }
 
 .box-footer h2 {
@@ -507,23 +544,24 @@ a {
         max-width: 100%;
         min-width: 100%;
         padding: 5px 10px;
-        
+
     }
 
     .cabecalho .container {
         padding: 0 10px;
-        
+
     }
 
     .cabecalho {
         padding: 0;
     }
 
-    header, main, footer {
+    main, footer {
         overflow: hidden;
     }
 
     .menu2 {
+        position: relative;
         display: block;
     }
 
@@ -563,7 +601,7 @@ a {
         padding: 0 !important;
         margin: 0 !important;
     }
-    
+
 }
 
 @media screen and (max-width: 375px){

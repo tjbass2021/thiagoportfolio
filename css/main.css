@@ -100,46 +100,55 @@ a {
     display: none;
     transition: 0.3s;
 }
-/*O botão que bugou tudo*/
-.menu-hamburguer {
+.menu-hamburguer, .exit {
     border: none;
     background: none;
     cursor: pointer;
     margin-left: 20px;
     width: 64px;
     height: 64px;
-/*a parte nova inserida*/
     position: fixed;
     right: 10px;
     top: 0px;
     z-index: 7;
 }
-/*-----fim---------------*/
-.menu-hamburguer i{
+
+.menu-hamburguer-oculto {
+    display: none;
+}
+.menu-hamburguer i, .exit i{
     color: var(--verde-green);
     font-size: 1.875rem;
     z-index: 6;
+}
+
+.exit{
+    display: none;
 }
 
 .menu-oculto {
     display: block;
     width: 0vw;
     height:100vh;
-    background-color: var(--azul-dark);
+    background-color: var(--azul-grey);
     position: fixed;
     right: 0;
     top: 64px;
     z-index: 6;
+    transition: 0.5s;
 
 
+}
 
+.exit-visivel {
+    display: block;
 }
 
 .visivel {
     display: block;
     right: 0;
-    transition: 0.3s;
     width: 70vw;
+    transition: 0.5s
 }
 
 
